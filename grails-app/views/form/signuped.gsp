@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: gajesh
   Date: 11/6/16
-  Time: 12:54 PM
+  Time: 1:52 PM
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" %>
@@ -12,8 +12,6 @@
 </head>
 
 <body>
- name :${recentlySaved.name}
- email :${recentlySaved.email}
- password :${recentlySaved.password}
+Name : ${recentlySaved.}
 </body>
 </html>
