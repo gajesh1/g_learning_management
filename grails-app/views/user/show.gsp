@@ -9,38 +9,48 @@
 <html>
 <head>
     <title></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-</head>
+    <asset:stylesheet href="bootstrap.css"/>
+    <asset:javascript src="jquery.js"/>
+    <asset:javascript src="bootstrap.js"/>
+    </head>
 
 <body>
-<center>
-  <h1>user is added...!</h1>
-  <table class="table table-hover table-striped" width="50px">
-      <tr>
-      <th>
-          Name
-      </th>
-      <th>
-          Emil
-      </th>
-      <th>
-         password
-      </th>
-      </tr>
-        <g:each var = "stored" in ="${recent}">
-            <tr>
-                 <td>${stored.myName}</td>
-                  <td>${stored.myEmail}  </td>
-                  <td>${stored.myPassword}</td>
-            </tr>
-              </g:each>
-  </table>
-<center>
+<h1 id="h2">Grails session</h1>
+<div id="divHead" class="container-fluid">
+    <ul  class="nav nav-tabs">
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#myTab li:eq(1) a").tab('show');
+            });
+        </script>
+        <li><a href="#1" data-toggle="pill" class="active">Create &nbsp; </a></li>
+        <li><a href="#2" data-toggle="tab" class="active">Show  &nbsp;</a></li>
+        <li><a href="#3" data-toggle="pill">List  &nbsp;</a></li>
+    </ul>
+</div>
+<div class="tab-content">
+    <div id="1" class="tab-pane">
+        <h2>Sign up here.....!</h2>
+        <div class="row"
+        <div class="col-md-3">
+            <g:form controller="user" action="show" method="post">
+                <b><p>Name</p>
+                    <p><input type="text" name = "name" class ="form-control input-sm" placeholder="Enter useraname....!"></p>
+                    <p>Email</p>
+                    <p> <input type="email" name = "email" class ="form-control" placeholder="Enter email....!"></p>
+                    <p>Password</p>
+                    <p><input type="password" name = "password" class ="form-control" placeholder="Enter password....!"></p>
+                    <p><button class="btn-success">sign up</button></p></b></g:form>
+        </div>
+    </div>
+    <div id="2" class="tab-pane fade in active">
+        <p><h2>Recenlty added use</h2></p>
+        <p>Name:${newUser.myName}</p>
+        <p>Email:${newUser.myEmail}</p>
+        <p>Password:${newUser.myPassword}</p>
+
+        <a href="list">Check user list</a>
+    </div>
+</div>
 </body>
 </html>
