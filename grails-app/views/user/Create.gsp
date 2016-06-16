@@ -61,8 +61,8 @@
                 });
             </script>
             <li><a href="#1" data-toggle="tab" class="active"  link="white">Create &nbsp; </a></li>
-            <li><a href="#2" data-toggle="pill"  class="active">Show  &nbsp;</a></li>
-            <li><a href="#3" data-toggle="pill"  class="active">List  &nbsp;</a></li>
+            <li><a href="Learning_Management/user/show" data-toggle="pill"  class="active">Show  &nbsp;</a></li>
+            <li><a href="Learning_Management/user/list" data-toggle="pill"  class="active">List  &nbsp;</a></li>
         </ul>
     </div>
     <div class="tab-content">

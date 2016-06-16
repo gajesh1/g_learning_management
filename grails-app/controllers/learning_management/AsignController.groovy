@@ -2,11 +2,10 @@ package learning_management
 
 import Learning_Management.User
 
-class UserController {
-
+class AsignController {
     def Create(){}
     def save() {
-        User u1 = new User([myName: params.name, myEmail: params.email, myPassword: params.password, myAge:Integer.(params.age)])
+        User u1 = new User([myName:params.name, myEmail:params.email, myPassword:params.password, myAge:params.int("age")])
         session.current = u1
         if (!session.all) {
             session.all = []
@@ -14,15 +13,11 @@ class UserController {
         session.all.push(u1)
         redirect(action:"show")
     }
-  def show() {
+    def show() {
 
-        [recent: session.current]
+        [recent:session.current]
     }
     def list(){
         [stored:session.all]
-    }
-    def Navbar()
-    {
-
     }
 }

@@ -6,12 +6,13 @@ package Learning_Management
 
 class User {
     String myName, myEmail, myPassword
-
+    int myAge
 
     void Task() {
         name = name.toUpperCase()
         email = email.toUpperCase()
         password = password.toUpperCase()
+
     }
 
 }
