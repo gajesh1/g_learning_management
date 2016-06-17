@@ -8,22 +8,28 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-  <title></title>
-    <meta name="layout" content="myLayout"/>
+    <title></title>
+    <meta name="layout" content="asignLayout"/>
     <style>
-        input{
-            max-width:40%;
-        }
-    h3{
-        color: #262626;
+    input{
+        max-width:40%;
+    }h3{
+         color: #262626;
+     }
+    hr{
+        background-color: orangered;
     }
-</style>
+    </style>
 </head>
 <body>
+<content tag="header">
 <div class="page-header">
     <h3>&nbsp; &nbsp;&nbsp; Enter Detail of user....!</h3>
 </div>
-<form class="form-horizontal" controller="asign1" method="post" action="save">
+</content>
+<content tag="Body">
+<div >
+ <form class="form-horizontal" controller="asign1" method="post" action="save">
     <div class="form-group">
         <label for="inputText" class="col-sm-2 control-label">Name</label>
         <div class="col-sm-10">
@@ -53,7 +59,21 @@
             <button type="submit" class="btn btn-success">Sign in</button>
         </div>
     </div>
-</div>
 </form>
+</div>
+
+</content>
+<content tag="discription">
+    <h4><font color="red">
+        Instruction:</br>
+        <p> </p>
+    </font></h4>
+    <hr>
+        <p>1: Name should be full name.</p>
+        <p>2:Email should be valid Email.</p>
+        <p>3:Password should greater then 6 character</p>
+        <p>4.Age should be an Integer.</p>
+</content>
+
 </body>
 </html>

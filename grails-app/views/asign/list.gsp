@@ -9,7 +9,7 @@
 <html>
 <head>
     <title></title>
-    <g:render template="userFlies"/>
+    <meta name="layout" content="myLayout"/>
     <style>
        th{
            background-color: #424137;
@@ -28,7 +28,6 @@
     </style>
 </head>
 <body>
-  <g:render template="myNavbar"/>
   <div class="container" align="center">
   <h2>List of user...!</h2>
   <table class="table-bordered table table-hover table-condensed table-striped">
@@ -47,7 +46,7 @@
         </th>
     </tr>
     <g:each var = "update" in ="${stored}">
-        <tr class="<g:if test='${update.myAge<18}?'danger':'/>">
+        <tr class="${update.myAge<18 ? 'bg-danger' : ''}">
             <td>${update.myName}</td>
             <td>${update.myEmail}  </td>
             <td>${update.myPassword}</td>

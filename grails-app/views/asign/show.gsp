@@ -9,7 +9,6 @@
 <html>
 <head>
     <title></title>
-    <g:render template="userFlies"/>
     <style>
      .container{
          background-color: #888888;
@@ -20,12 +19,13 @@
         color: #262626;
     }
 </style>
+    <meta name="layout" content="asignLayout"/>
 </head>
 
 <body>
-   <g:render template="myNavbar"/>
+<content tag="Body">
    <div class="container" align="center">
-   <p><h2> <font color="white">Recenlty added use</font></h2></p>
+   <p><h2> <font color="white">Recenlty added User</font></h2></p>
     <font color="aqua" size="5px">
         <table class="table">
             <tr>
@@ -51,5 +51,6 @@
         </table>
   </font>
   </div>
+</content>
 </body>
 </html>

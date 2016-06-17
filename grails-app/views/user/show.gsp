@@ -76,9 +76,11 @@
     </div>
     <div id="2" class="tab-pane fade on active">
         <p><h2>Recenlty added use</h2></p>
-        <p>Name:${newUser.myName}</p>
-        <p>Email:${newUser.myEmail}</p>
-        <p>Password:${newUser.myPassword}</p>
+        <p>Name:${newUser.firstName}</p>
+        <p>Email:${newUser.email}</p>
+        <p>Password:${newUser.lastName}</p>
+        <p>Password:${newUser.age}</p>
+
         <a href="list" link="red">Check user list</a>
     </div>
     <div id="3" class="tab-pane">

@@ -1,7 +1,8 @@
 package learning_management
 
 import Learning_Management.User
-class AsignController {
+
+class SecondAsignController {
     def Create(){}
     def save() {
         User u1 = new User([myName:params.name, myEmail:params.email, myPassword:params.password, myAge:params.int("age")])

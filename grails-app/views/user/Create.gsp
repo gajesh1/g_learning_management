@@ -77,6 +77,7 @@
             <p> <input type="email" name = "email" class ="form-control" placeholder="Enter email....!"></p>
             <p>Password</p>
             <p><input type="password" name = "password" class ="form-control" placeholder="Enter password....!"></p>
+                <p><input type="text" name = "age" class ="form-control" placeholder="Enter age....!"></p>
             <p><button class="btn-success">sign up</button></p></b></g:form>
             </div>
          </div>

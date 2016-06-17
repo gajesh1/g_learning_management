@@ -1,18 +1,19 @@
-package learning_management
+package Learning_Management
 
-import Learning_Management.User
-
-class UserController {
+/**
+ * Created by gajesh on 16/6/16.
+ */
+class dataClass {
 
     def Create(){}
     def save() {
-        Person u1 = new Person([firstName: params.name, lastName: params.password,email: params.email, age:params.age])
+        User u1 = new  User([firstName: params.name, lastName: params.password,email: params.email, age:params.age])
         session.current = u1
         u1.save()
         session.all.push(u1)
         redirect(action:"show")
     }
-  def show() {
+    def show() {
 
         [newUser: session.current]
     }
