@@ -36,7 +36,7 @@
     </div>
 </content>
 <content tag="Body">
-    <table class="table-bordered table table-hover table-condensed table-striped" align="center">
+    <table class="table-bordered table table-hover" align="center">
         <tr>
             <th>
                 Name

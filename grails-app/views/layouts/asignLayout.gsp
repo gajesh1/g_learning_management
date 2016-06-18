@@ -13,9 +13,10 @@
     <asset:javascript src="jquery.js"/>
     <asset:javascript src="bootstrap.js"/>
     <style>
-    .navbar-brand{
+    .navbar-brand>a:link{
         font-size: 30px;
         font-style: italic;
+        color:red
     }
     .navbar{
         background-color:#00b3ee;
@@ -32,11 +33,13 @@
         background-color: #d5d5d5;
         border-radius: 10px;
     }
-    footer{
-        
+    .footer{
+
         background-color: #00b3ee;
-        padding: 2%;
-    }
+        padding:2%;
+
+
+
     </style>
     <g:layoutHead/>
 </head>
@@ -44,11 +47,18 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
+                <button class="navbar-toggle collapsed"  data-toggle="collapse"  data-target="#bs-example-navbar-collapse-1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="#">Learning Management</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><g:link action="create" controller="secondAsigna" class="active"> Create</g:link></li>
+                    <li class="active><g:link action="create" controller="secondAsign">
+                        Create</g:link></li>
                     <li><g:link action="show" controller="secondAsign" > Show </g:link></li>
                     <li> <g:link action="list" controller="secondAsign" >  List </g:link></li>
                 </ul>
@@ -72,9 +82,11 @@
     </div>
   </div>
 </div>
-<footer class="footer text-center">
+<!--<footer class="footer text-center">
+    <div>
     <p><font color="red" size="10px"> Hi! I am Gajesh panigrahi.</font></p>
-</footer>
+    </div>
+</footer> -->
 </body>
 
 </html>
