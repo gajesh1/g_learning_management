@@ -57,10 +57,10 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active><g:link action="create" controller="secondAsign">
+                    <li class="${params.action=='create'?'active':''}"><g:link action="create" controller="secondAsign">
                         Create</g:link></li>
-                    <li><g:link action="show" controller="secondAsign" > Show </g:link></li>
-                    <li> <g:link action="list" controller="secondAsign" >  List </g:link></li>
+                    <li class="${params.action=='list'?'active':''}"> <g:link action="list" controller="secondAsign" >
+                        List </g:link></li>
                 </ul>
             </div>
         </div>

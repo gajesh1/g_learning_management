@@ -5,6 +5,4 @@ class Person {
      String lastName
      String email
     int age
-    static constraints = {
-    }
 }

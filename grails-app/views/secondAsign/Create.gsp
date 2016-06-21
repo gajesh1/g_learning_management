@@ -31,24 +31,24 @@
 <div >
  <form class="form-horizontal" controller="asign1" method="post" action="save">
     <div class="form-group">
-        <label for="inputText" class="col-sm-2 control-label">Name</label>
+        <label for="inputText" class="col-sm-2 control-label">Firstname</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputText" placeholder="Name" name="name">
+            <input type="text" class="form-control" id="inputText" placeholder="Firstname" name="name">
         </div>
     </div>
     <div class="form-group">
-        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+        <label for="lastName" class="col-sm-2 control-label">Lastname</label>
         <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
+            <input type="text" class="form-control" id="lastName" placeholder="Lastname" name="password">
         </div>
     </div>
-    <div class="form-group">
-        <label for="inputPassword" class="col-sm-2 control-label">Password</label>
-        <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password">
-        </div>
-    </div>
-    <div class="form-group">
+     <div class="form-group ${hasErrors(bean: u1, field : 'email' , 'has-error')}">
+         <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+         <div class="col-sm-10">
+             <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
+         </div>
+     </div>
+    <div class="form-group ${hasErrors(bean: u1, field : 'age' , 'has-error')}">
         <label for="inputAge" class="col-sm-2 control-label">Age</label>
         <div class="col-sm-10">
             <input type="text" class="form-control" id="inputAge" placeholder="Age" name="age">

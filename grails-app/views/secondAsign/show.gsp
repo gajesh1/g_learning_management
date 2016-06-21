@@ -27,26 +27,21 @@
     <p><h2> <font color="#483d8b">Recenlty added User</font></h2></p>
     <font color="aqua" size="5px">
         <table class="table">
-            <tr>
-                <td>
-                    Name:</td><td>${recent.myName}
-            </td>
-            </tr>
-            <tr>
-                <td>
-                    Email:</td><td>${recent.myEmail}
-            </td>
-            </tr>
-            <tr>
-                <td>
-                    Password:</td><td>${recent.myPassword}
-            </td>
-            </tr>
-            <tr>
-                <td>
-                    Age:</td><td> ${recent.myAge}
-            </td>
-            </tr>
+            <tr><td>
+                    ID:</td><td>${recent.id}
+            </td></tr>
+            <tr><td>
+                    FirstName:</td><td>${recent.firstName}
+            </td></tr>
+            <tr><td>
+                    LastName:</td><td>${recent.lastName}
+            </td></tr>
+            <tr><td>
+                Email:</td><td>${recent.email}
+            </td></tr>
+            <tr><td>
+                    Age:</td><td>${recent.age}
+            </td></tr>
         </table>
     </font>
 </div>

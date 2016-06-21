@@ -39,6 +39,9 @@
     <table class="table-bordered table table-hover" align="center">
         <tr>
             <th>
+                ID
+            </th>
+            <th>
                 Name
             </th>
             <th>
@@ -52,11 +55,13 @@
             </th>
         </tr>
         <g:each var = "update" in ="${stored}">
-            <tr class="${update.myAge<18 ?'bg-danger':''}">
-                <td>${update.myName}</td>
-                <td>${update.myEmail}  </td>
-                <td>${update.myPassword}</td>
-                <td>${update.myAge}</td>
+            <tr class="${update.age<18 ?'bg-danger':''}">
+                <td><a href="show/${update.id}" >${update.id}</a></td>
+                <td>${update.firstName}</td>
+                <td>${update.lastName}  </td>
+                <td>${update.email}</td>
+                <td>${update.age}</td>
+                <td><a href="update/${update.id}">Edit</a>/Delete</td>
             </tr>
         </g:each>
     </table>
